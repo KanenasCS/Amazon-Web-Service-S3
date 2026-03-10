@@ -40,15 +40,6 @@ In short:
 
 Typical layout:
 
-- **PowerShell orchestration / helpers**
-  - `ConfigAwsConnector.ps1` – main entry/orchestrator for configuring the connector.
-  - `ConfigVpcFlowDataConnector.ps1` – VPC Flow Logs configuration.
-  - `ConfigCloudTrailDataConnector.ps1` – CloudTrail configuration.
-  - `ConfigGuardDutyDataConnector.ps1` – GuardDuty configuration.
-  - `ConfigCloudWatchDataConnector.ps1` – CloudWatch logs configuration.
-  - `ConfigCustomLogDataConnector.ps1` – custom log configuration.
-  - `CommonAwsPolicies.ps1`, `HelperFunctions.ps1`, etc. – shared functions and policy helpers.
-
 - **CloudFormation templates**
   - One or more templates per log source to create:
     - S3 bucket(s)
